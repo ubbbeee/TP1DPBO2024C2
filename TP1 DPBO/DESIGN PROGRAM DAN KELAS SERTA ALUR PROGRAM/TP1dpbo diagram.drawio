@@ -1,0 +1,153 @@
+<mxfile host="app.diagrams.net" modified="2024-03-13T13:29:05.091Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="fozRpPC8BHvM0DVAaQWR" version="24.0.5" type="device">
+  <diagram name="Page-1" id="wUSkjya8I8xQTMlsbqG3">
+    <mxGraphModel dx="2835" dy="857" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="cspP7-01ryiyzKGEgAym-1" value="Karakter" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry y="270" width="160" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="cspP7-01ryiyzKGEgAym-2" value="+ Name: String&lt;div&gt;+ jenisKelamin : String&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ role : String&lt;/div&gt;&lt;div&gt;+ senjata : String&lt;/div&gt;&lt;div&gt;+ level : int&lt;/div&gt;&lt;div&gt;+ health : int&lt;/div&gt;&lt;div&gt;+ attack : int&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="cspP7-01ryiyzKGEgAym-1" vertex="1">
+          <mxGeometry y="30" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="cspP7-01ryiyzKGEgAym-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="cspP7-01ryiyzKGEgAym-1" vertex="1">
+          <mxGeometry y="150" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="cspP7-01ryiyzKGEgAym-4" value="+ Karakter(): Constructor" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="cspP7-01ryiyzKGEgAym-1" vertex="1">
+          <mxGeometry y="158" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="cspP7-01ryiyzKGEgAym-7" value="+ Karakter(dengan parameter): Constructor" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="cspP7-01ryiyzKGEgAym-1" vertex="1">
+          <mxGeometry y="184" width="160" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="cspP7-01ryiyzKGEgAym-8" value="+ Getter dan Setter" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="cspP7-01ryiyzKGEgAym-1" vertex="1">
+          <mxGeometry y="230" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cspP7-01ryiyzKGEgAym-9" value="+ berikanInformasi()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="cspP7-01ryiyzKGEgAym-1" vertex="1">
+          <mxGeometry y="260" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cspP7-01ryiyzKGEgAym-10" value="Barang" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="370" y="440" width="210" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="cspP7-01ryiyzKGEgAym-11" value="+ namaBarang : String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="cspP7-01ryiyzKGEgAym-10" vertex="1">
+          <mxGeometry y="26" width="210" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="cspP7-01ryiyzKGEgAym-12" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="cspP7-01ryiyzKGEgAym-10" vertex="1">
+          <mxGeometry y="52" width="210" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="cspP7-01ryiyzKGEgAym-13" value="&lt;div&gt;+ Barang() : Constructor&lt;/div&gt;+ getter dan setter&lt;div&gt;+ toString() barang : override String&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="cspP7-01ryiyzKGEgAym-10" vertex="1">
+          <mxGeometry y="60" width="210" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="cspP7-01ryiyzKGEgAym-14" value="Inventaris" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="670" y="430" width="240" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="cspP7-01ryiyzKGEgAym-15" value="+ daftarBarang : ArrayList&amp;lt;Barang&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="cspP7-01ryiyzKGEgAym-14" vertex="1">
+          <mxGeometry y="26" width="240" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="cspP7-01ryiyzKGEgAym-16" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="cspP7-01ryiyzKGEgAym-14" vertex="1">
+          <mxGeometry y="70" width="240" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="cspP7-01ryiyzKGEgAym-17" value="&lt;div&gt;+ Inventaris ()&lt;/div&gt;+ getter dan setter&lt;div&gt;+ toString() daftarBarang : override String&lt;/div&gt;&lt;div&gt;+ addBarang(barang)&lt;/div&gt;&lt;div&gt;+ removeBarang(barang)&lt;/div&gt;&lt;div&gt;+ contains(barang)&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="cspP7-01ryiyzKGEgAym-14" vertex="1">
+          <mxGeometry y="78" width="240" height="122" as="geometry" />
+        </mxCell>
+        <mxCell id="cspP7-01ryiyzKGEgAym-19" value="Has a" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;rounded=0;exitX=-0.014;exitY=0.079;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitPerimeter=0;" parent="1" source="cspP7-01ryiyzKGEgAym-14" target="cspP7-01ryiyzKGEgAym-11" edge="1">
+          <mxGeometry x="-1" y="3" relative="1" as="geometry">
+            <mxPoint x="490" y="400" as="sourcePoint" />
+            <mxPoint x="650" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YIuBZF8fQgZvpo0E50Ln-1" value="Enemy" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="270" y="620" width="240" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="YIuBZF8fQgZvpo0E50Ln-2" value="+ ancaman : String&lt;div&gt;+ inventarisEnemy : Inventaris&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="YIuBZF8fQgZvpo0E50Ln-1" vertex="1">
+          <mxGeometry y="26" width="240" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="YIuBZF8fQgZvpo0E50Ln-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="YIuBZF8fQgZvpo0E50Ln-1" vertex="1">
+          <mxGeometry y="90" width="240" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="YIuBZF8fQgZvpo0E50Ln-4" value="&lt;div&gt;+ Enemy() : Constructor&lt;/div&gt;+ getter dan setter&lt;div&gt;+ ancamanMusuh(Player player) : void&lt;/div&gt;&lt;div&gt;+ kurangiAttack(jumlah) : void&lt;/div&gt;&lt;div&gt;+ enemyMenyerang(player) : void&lt;/div&gt;&lt;div&gt;+ transferBarangKePlayer(player) : void&lt;/div&gt;&lt;div&gt;+ diserangEnemy(damage, player) : void&lt;/div&gt;&lt;div&gt;+berikanInformasiMusuh()&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="YIuBZF8fQgZvpo0E50Ln-1" vertex="1">
+          <mxGeometry y="98" width="240" height="222" as="geometry" />
+        </mxCell>
+        <mxCell id="YIuBZF8fQgZvpo0E50Ln-5" value="Player" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-40" y="620" width="250" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="YIuBZF8fQgZvpo0E50Ln-6" value="+ skill : String&lt;div&gt;+ inventarisPlayer: Inventaris&lt;/div&gt;&lt;div&gt;+ experience : int&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="YIuBZF8fQgZvpo0E50Ln-5" vertex="1">
+          <mxGeometry y="26" width="250" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="YIuBZF8fQgZvpo0E50Ln-7" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="YIuBZF8fQgZvpo0E50Ln-5" vertex="1">
+          <mxGeometry y="90" width="250" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="YIuBZF8fQgZvpo0E50Ln-8" value="&lt;div&gt;+ Player() : Constructor&lt;/div&gt;+ getter dan setter&lt;div&gt;+ memberikanBarang(barang, npc) : void&lt;/div&gt;&lt;div&gt;+ tambahExperience(exp) : void&lt;/div&gt;&lt;div&gt;+ enemyMenyerang(player) : void&lt;/div&gt;&lt;div&gt;+ levelUp() : void&lt;/div&gt;&lt;div&gt;+ tambahBarangKeInventory(barang) : void&lt;/div&gt;&lt;div&gt;+ tambahHealth(tambahan) : void&lt;/div&gt;&lt;div&gt;+ tambahAttack(tambahan) : void&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ berikanInformasiPlayer() : void&lt;/div&gt;&lt;div&gt;+ menyerangEnemy(target, player) : void&lt;/div&gt;&lt;div&gt;+ diserangPlayer(damage) : void&lt;/div&gt;&lt;div&gt;+ gunakanSkill(target)&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="YIuBZF8fQgZvpo0E50Ln-5" vertex="1">
+          <mxGeometry y="98" width="250" height="222" as="geometry" />
+        </mxCell>
+        <mxCell id="YIuBZF8fQgZvpo0E50Ln-10" value="Has an" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.752;entryY=1.003;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="YIuBZF8fQgZvpo0E50Ln-2" target="cspP7-01ryiyzKGEgAym-17" edge="1">
+          <mxGeometry x="-1" y="3" relative="1" as="geometry">
+            <mxPoint x="470" y="900" as="sourcePoint" />
+            <mxPoint x="630" y="900" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YIuBZF8fQgZvpo0E50Ln-11" value="has an" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;rounded=0;exitX=0.923;exitY=0.998;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.952;entryY=1.003;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="YIuBZF8fQgZvpo0E50Ln-8" target="cspP7-01ryiyzKGEgAym-17" edge="1">
+          <mxGeometry x="-1" y="3" relative="1" as="geometry">
+            <mxPoint x="190" y="944.238" as="sourcePoint" />
+            <mxPoint x="899" y="650" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="191" y="1020" />
+              <mxPoint x="900" y="1020" />
+              <mxPoint x="900" y="710" />
+              <mxPoint x="899" y="710" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YIuBZF8fQgZvpo0E50Ln-13" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.53;entryY=0.952;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="YIuBZF8fQgZvpo0E50Ln-5" target="cspP7-01ryiyzKGEgAym-9" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="150" y="540" as="sourcePoint" />
+            <mxPoint x="310" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YIuBZF8fQgZvpo0E50Ln-14" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="YIuBZF8fQgZvpo0E50Ln-1" target="cspP7-01ryiyzKGEgAym-9" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="320" y="540" as="sourcePoint" />
+            <mxPoint x="480" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YIuBZF8fQgZvpo0E50Ln-15" value="NPC" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-340" y="620" width="250" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="YIuBZF8fQgZvpo0E50Ln-16" value="+ informasi : String&lt;div&gt;+ quest : String&lt;br&gt;&lt;div&gt;+ inventarisNPC: Inventaris&lt;/div&gt;&lt;div&gt;+ musuh : Enemy&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="YIuBZF8fQgZvpo0E50Ln-15" vertex="1">
+          <mxGeometry y="26" width="250" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="YIuBZF8fQgZvpo0E50Ln-17" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="YIuBZF8fQgZvpo0E50Ln-15" vertex="1">
+          <mxGeometry y="90" width="250" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="YIuBZF8fQgZvpo0E50Ln-18" value="&lt;div&gt;+ NPC() : Constructor&lt;/div&gt;+ getter dan setter&lt;div&gt;+ berikanQuest(player) : void&lt;/div&gt;&lt;div&gt;+ tambahBarangDiterima(barang) : void&lt;/div&gt;&lt;div&gt;+ berikanInformasiNPC(player) : void&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="YIuBZF8fQgZvpo0E50Ln-15" vertex="1">
+          <mxGeometry y="98" width="250" height="102" as="geometry" />
+        </mxCell>
+        <mxCell id="YIuBZF8fQgZvpo0E50Ln-19" value="has an" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;rounded=0;exitX=0.559;exitY=1.005;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.851;entryY=1.003;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="YIuBZF8fQgZvpo0E50Ln-18" target="cspP7-01ryiyzKGEgAym-17" edge="1">
+          <mxGeometry x="-1" y="3" relative="1" as="geometry">
+            <mxPoint x="290" y="1020" as="sourcePoint" />
+            <mxPoint x="450" y="1020" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-200" y="1020" />
+              <mxPoint x="874" y="1020" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YIuBZF8fQgZvpo0E50Ln-20" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="YIuBZF8fQgZvpo0E50Ln-15" target="cspP7-01ryiyzKGEgAym-9" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-30" y="580" as="sourcePoint" />
+            <mxPoint x="130" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r_xMm070va0eyDK7mJR7-1" value="Has an" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;rounded=0;exitX=0.791;exitY=1.002;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="YIuBZF8fQgZvpo0E50Ln-18" target="YIuBZF8fQgZvpo0E50Ln-4">
+          <mxGeometry x="-1" y="3" relative="1" as="geometry">
+            <mxPoint x="-140" y="860" as="sourcePoint" />
+            <mxPoint x="20" y="860" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-142" y="990" />
+              <mxPoint x="370" y="990" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
