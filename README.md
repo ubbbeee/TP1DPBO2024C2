@@ -1,2 +1,188 @@
 # TP1DPBO2024C2
 Tugas Praktikum 1 OOP C2 Alfen Fajri Nurulhaq 2201431
+
+//    Saya Alfen Fajri Nurulhaq (2201431) mengerjakan TP1 DPBO simulasi game dalam mata
+//    kuliah OOP untuk keberkahanNya maka saya tidak
+//    melakukan kecurangan seperti yang telah dispesikasikan.Aamiin
+
+DESIGN KELAS DAN PROGRAM TP1 DPBO Alfen Fajri Nurulhaq 2201431 C2
+![Screenshot 2024-03-13 211851](https://github.com/ubbbeee/TP1DPBO2024C2/assets/120569318/b0387dde-7d84-48e1-b3a2-4955969e74e6)
+
+
+### Kelas `Karakter` adalah kelas dasar yang digunakan sebagai induk untuk karakter-karakter dalam permainan.
+
+1. **Properti Karakter**:
+   - `nama`: Menyimpan nama karakter.
+   - `jenisKelamin`: Menyimpan jenis kelamin karakter.
+   - `role`: Menyimpan peran atau tipe karakter dalam permainan.
+   - `senjata`: Menyimpan senjata yang digunakan oleh karakter.
+   - `level`: Menyimpan level karakter.
+   - `health`: Menyimpan nilai kesehatan atau health points (HP) karakter.
+   - `attack`: Menyimpan nilai serangan atau attack points (AP) karakter.
+
+2. **Constructor**:
+   - `Karakter()`: Constructor default yang menginisialisasi properti dengan nilai default.
+   - `Karakter(String nama, String jenisKelamin)`: Constructor yang digunakan untuk NPC dengan hanya menyimpan nama dan jenis kelamin.
+   - `Karakter(String nama, String jenisKelamin, String role, String senjata, int level, int health, int attack)`: Constructor yang digunakan untuk menginisialisasi semua properti karakter.
+
+3. **Getter dan Setter**:
+   - Metode-metode untuk mengakses dan mengubah nilai properti karakter.
+
+4. **Metode `berikanInformasi()`**:
+   - Metode ini digunakan untuk mencetak informasi lengkap tentang karakter, termasuk nama, jenis kelamin, peran, senjata, level, health, dan attack.
+
+Dengan desain ini, kelas `Karakter` dapat digunakan sebagai dasar untuk karakter-karakter seperti pemain (player) dan musuh (enemy). Ini memungkinkan penggunaan properti dasar yang sama untuk karakter-karakter yang berbeda dalam permainan
+
+### Kelas `Barang` adalah representasi dari item atau barang dalam permainan.
+
+1. **Properti Barang**:
+   - `namaBarang`: Menyimpan nama dari barang atau item.
+
+2. **Constructor**:
+   - `Barang(String namaBarang)`: Constructor untuk membuat objek barang dengan nama tertentu. Saat objek barang dibuat, nilai namaBarang diinisialisasi dengan nilai yang diberikan.
+
+3. **Getter dan Setter**:
+   - `getNamaBarang()`: Metode untuk mendapatkan nama barang.
+   - `setNamaBarang(String namaBarang)`: Metode untuk mengubah nama barang.
+
+4. **Metode `toString()`**:
+   - Override dari metode `toString()` yang ada di kelas Object. Metode ini mengembalikan representasi string dari objek barang, yaitu nama barang.
+
+Dengan desain ini, kelas `Barang` merepresentasikan item/barang dalam permainan.
+
+### Kelas `Inventaris` adalah representasi dari inventaris yang menyimpan daftar barang. Mari kita bahas lebih detail tentang desain kelas dan fungsionalitasnya:
+
+### Desain Kelas:
+1. **Atribut:**
+   - `daftarBarang`: Sebuah ArrayList yang menyimpan objek barang. Ini digunakan untuk menyimpan daftar barang dalam inventaris.
+
+2. **Konstruktor:**
+   - `Inventaris()`: Konstruktor default yang membuat objek inventaris dengan daftar barang kosong. Pada saat objek inventaris dibuat, ArrayList `daftarBarang` juga dibuat.
+
+3. **Metode:**
+   - `getDaftarBarang()`: Metode getter untuk mendapatkan daftar barang dari inventaris.
+   - `setDaftarBarang(ArrayList<Barang> daftarBarang)`: Metode setter untuk mengatur daftar barang inventaris.
+   - `addBarang(Barang barang)`: Metode untuk menambahkan barang ke dalam inventaris. Barang yang diterima sebagai parameter ditambahkan ke ArrayList `daftarBarang`.
+   - `removeBarang(Barang barang)`: Metode untuk menghapus barang dari inventaris. Barang yang diterima sebagai parameter dihapus dari ArrayList `daftarBarang`.
+   - `contains(Barang barang)`: Metode untuk memeriksa apakah suatu barang ada dalam inventaris. Ini menggunakan metode `contains()` dari ArrayList untuk melakukan pemeriksaan.
+   - `toString()`: Metode untuk merepresentasikan inventaris dalam bentuk string. Ini akan mencetak daftar barang dalam inventaris.
+
+### Fungsionalitas:
+- Kelas ini memungkinkan untuk menambahkan barang baru ke dalam inventaris, menghapus barang yang ada, dan memeriksa apakah suatu barang ada dalam inventaris.
+- Barang disimpan dalam ArrayList `daftarBarang`, yang memungkinkan operasi penambahan, penghapusan, dan pengecekan.
+- Setiap objek suatu karakter(Player, Enemy dan NPC) memiliki daftar barangnya sendiri, sehingga objek inventaris dapat digunakan secara independen.
+
+Dengan desain seperti ini, kelas `Inventaris` dapat digunakan untuk mengelola inventaris dalam permainan
+
+### Kelas `Enemy` merupakan representasi dari musuh dalam permainan, yang merupakan turunan dari kelas `Karakter`.
+
+### Desain Kelas:
+1. **Atribut:**
+   - `ancaman`: Menyimpan informasi tentang tingkat ancaman musuh (berbahaya, sedang, mudah).
+   - `inventarisEnemy`: Menyimpan inventaris barang musuh.
+
+2. **Konstruktor:**
+   - `Enemy()`: Konstruktor default yang digunakan untuk membuat objek musuh dengan atribut default.
+   - `Enemy(String nama, String jenisKelamin, String role, String senjata, int level, int health, int attack, String ancaman)`: Konstruktor yang digunakan untuk membuat objek musuh dengan atribut yang ditentukan.
+
+3. **Metode:**
+   - `ancamanMusuh(Player player)`: Menampilkan informasi tentang tingkat ancaman musuh terhadap pemain berdasarkan tingkat kekuatan pemain dan ancaman musuh.
+   - `kurangiAttack(int jumlah)`: Mengurangi serangan musuh sebanyak jumlah tertentu.
+   - `enemyMenyerang(Player player)`: Menghasilkan serangan musuh terhadap pemain.
+   - `transferBarangKePlayer(Player player)`: Mentransfer barang dari inventaris musuh ke inventaris pemain saat musuh dikalahkan.
+   - `diserangEnemy(int damage, Player player)`: Mengurangi kesehatan musuh ketika diserang oleh pemain.
+   - `berikanInformasiMusuh()`: Menampilkan informasi lengkap tentang musuh, termasuk tingkat ancaman.
+
+### Fungsionalitas:
+- Kelas ini memungkinkan untuk menentukan tingkat ancaman musuh dan memberikan informasi tentang kesiapan pemain untuk menghadapinya.
+- Musuh dapat menyerang pemain dan merespons serangan dari pemain.
+- Ketika musuh dikalahkan, barang dari inventaris musuh akan ditransfer ke inventaris pemain.
+- Desain kelas ini memungkinkan pengelolaan musuh dalam permainan, termasuk kemampuan untuk menentukan tingkat kesulitan dan hadiah yang diberikan kepada pemain ketika musuh dikalahkan.
+
+Dengan desain  ini, kelas `Enemy` dapat digunakan dalam implementasi permainan untuk mengatur perilaku dan interaksi antara pemain dan musuh.
+
+### Kelas `Player` adalah representasi dari pemain dalam permainan.
+
+### Desain Kelas:
+1. **Atribut:**
+   - `inventarisPlayer`: Menyimpan inventaris barang milik pemain.
+   - `skill`: Menyimpan jenis skill yang dimiliki pemain.
+   - `experience`: Menyimpan pengalaman pemain untuk meningkatkan level.
+
+2. **Konstruktor:**
+   - `Player(String nama, String jenisKelamin, String role, String senjata, int level, int health, int attack, String skill)`: Konstruktor untuk membuat objek pemain dengan atribut yang ditentukan.
+
+3. **Metode:**
+   - `memberikanBarang(Barang barang, NPC npc)`: Memungkinkan pemain memberikan barang kepada NPC, untuk menambah experience yang dapat digunakan untuk menambah level.
+   - `tambahExperience(int exp)`: Menambahkan experience pemain untuk peningkatan level.
+   - `levelUp()`: Menangani peningkatan level pemain, termasuk peningkatan atribut seperti kesehatan dan serangan. dari experience yang didapat oleh pemain
+   - `tambahBarangKeInventory(Barang barang)`: Menambah barang ke inventaris pemain dari musuh.
+   - `menyerangEnemy(Enemy target, Player player)`: Memungkinkan pemain menyerang musuh dan merespons serangan musuh.
+   - `diserangPlayer(int damage)`: Mengurangi kesehatan pemain ketika diserang oleh musuh.
+   - `gunakanSkill(Karakter target)`: Memungkinkan pemain menggunakan skill tertentu terhadap target, dengan penanganan berbagai jenis skill seperti heal, strength, dan purify.
+	untuk skill heal akan menambah health pemain diri sendiri atau rekan pemain
+	untuk skill strength sama seperti heal namun bedanya skill ini akan menambah stats attack dari pemain
+	untuk skill purify hanya bisa dipakai oleh pemain dengan target musuh/enemy untuk mengurangi stats attack mereka
+   - `berikanInformasiPlayer()`: Menampilkan informasi lengkap tentang pemain, termasuk atribut dan jenis skill.
+
+### Fungsionalitas:
+- Kelas ini memungkinkan pemain untuk berinteraksi dengan lingkungan permainan, termasuk memberikan barang kepada NPC, menyerang musuh, dan menggunakan skill khusus.
+- Pemain dapat meningkatkan level mereka dengan meningkatkan pengalaman melalui berbagai tindakan seperti memberikan barang kepada NPC.
+- Desain kelas ini memungkinkan pengelolaan inventaris pemain dalam permainan dan peningkatan experience untuk meningkatkan level dan stats health dan attack pemain, serta memfasilitasi interaksi antara pemain dengan NPC dan Enemy
+
+### Kelas `NPC` merupakan representasi dari karakter non-playable dalam permainan.:
+
+### Desain Kelas:
+1. **Atribut:**
+   - `quest`: Menyimpan informasi tentang quest yang diberikan oleh NPC kepada pemain.
+   - `informasi`: Menyimpan informasi tambahan atau percakapan dari NPC.
+   - `inventarisNPC`: Menyimpan inventaris barang yang dimiliki oleh NPC.
+   - `musuh`: Menyimpan informasi tentang musuh yang terkait dengan quest dari NPC.
+
+2. **Konstruktor:**
+   - `NPC(String nama, String jenisKelamin, String informasi)`: Konstruktor untuk membuat objek NPC dengan atribut yang ditentukan. untuk NPC yang hanya memberikan informasi atau percakapan dengan pemain
+   - `NPC(String nama, String jenisKelamin, String quest, String informasi, Enemy musuh)`: Konstruktor untuk membuat objek NPC dengan atribut yang ditentukan termasuk quest dan musuh terkait.
+
+3. **Metode:**
+   - `berikanQuest(Player player)`: Memberikan quest kepada pemain berdasarkan kondisi level pemain dan jenis ancaman musuh.
+   - `tambahBarangDiterima(Barang barang)`: Menambah barang yang diterima dari pemain ke inventaris NPC.
+   - `berikanInformasiNPC(Player player)`: Menampilkan informasi NPC kepada pemain, termasuk quest yang diberikan, informasi tambahan, dan inventaris NPC.
+
+### Fungsionalitas:
+- Kelas ini memungkinkan NPC untuk berinteraksi dengan pemain dalam permainan dengan memberikan quest, menerima barang dari pemain, dan memberikan informasi tambahan.
+- NPC dapat memberikan quest kepada pemain berdasarkan level pemain dan tingkat ancaman musuh yang terkait.
+- NPC dapat menerima barang dari pemain sebagai bagian dari quest yang diberikan.
+- Desain kelas ini memungkinkan pengelolaan quest, informasi tambahan, dan inventaris NPC dalam permainan.
+
+Dengan desain seperti ini, kelas `NPC` dapat digunakan untuk merepresentasikan berbagai karakter non-pemain dalam permainan dan memfasilitasi interaksi antara pemain dengan NPC
+
+### Program utama `Main.java` ini menciptakan skenario interaksi antara pemain (`Player`), musuh (`Enemy`), dan karakter non-pemain (`NPC`) dalam permainan.
+
+1. **Membuat Objek Barang, Player, Musuh, dan NPC:**
+   - Objek-objek barang, pemain, musuh, dan NPC dibuat dengan atribut-atribut yang telah ditentukan sebelumnya.
+   - Setiap objek pemain diberikan beberapa barang di inventarisnya.
+   - Setiap musuh diberikan beberapa barang di inventaris musuhnya.
+
+2. **Menampilkan Informasi Pemain, Musuh, dan NPC:**
+   - Informasi tentang setiap pemain, musuh, dan NPC ditampilkan menggunakan metode `berikanInformasiPlayer()`, `berikanInformasiMusuh()`, dan `berikanInformasiNPC()`, yang memberikan detail tentang atribut-atribut masing-masing karakter.
+
+3. **Memberikan Quest dari NPC kepada Pemain:**
+   - NPC yang memiliki quest memberikan quest kepada pemain dengan memanggil metode `berikanQuest()`. Quest diberikan berdasarkan kondisi level pemain dan tingkat ancaman musuh terkait.
+
+4. **Pertarungan Antara Pemain dan Musuh:**
+   - Pemain menyerang musuh dengan menggunakan metode `menyerangEnemy()`.
+   - Musuh juga menyerang pemain dengan menggunakan metode `enemyMenyerang()`.
+   - Pemain menggunakan skill pada musuh atau sesama pemain dengan menggunakan metode `gunakanSkill()`.
+
+5. **Penanganan Setelah Pertempuran:**
+   - Setelah pertempuran, inventaris pemain dan inventaris musuh diperbarui.
+   - Barang dari pemain diberikan kepada NPC sebagai bagian dari quest yang diberikan.
+
+6. **Peningkatan Level Pemain:**
+   - Pemain dapat mengalami peningkatan level setelah menyelesaikan quest dan mendapatkan experience.
+
+Dengan demikian, program utama ini memberikan gambaran tentang bagaimana interaksi antara berbagai elemen permainan terjadi dalam permainan, termasuk pertarungan, pemberian quest, dan perdagangan barang antara pemain dan NPC.
+
+## SS PROGRAM
+![Screenshot 2024-03-13 211035](https://github.com/ubbbeee/TP1DPBO2024C2/assets/120569318/262924e5-feec-4141-8051-21a3893f9b70)
+![Screenshot 2024-03-13 211418](https://github.com/ubbbeee/TP1DPBO2024C2/assets/120569318/57734464-4a9a-4a39-8583-8757a84f411b)
